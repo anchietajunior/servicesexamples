@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @service_invoice.payment.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @service_invoice.status %>
+</p>
+
+<%= link_to 'Edit', edit_service_invoice_path(@service_invoice) %> |
+<%= link_to 'Back', service_invoices_path %>
